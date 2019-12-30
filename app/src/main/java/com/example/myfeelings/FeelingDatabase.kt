@@ -1,4 +1,4 @@
-package com.example.feelings
+package com.example.myfeelings
 
 import android.content.Context
 import androidx.room.Database

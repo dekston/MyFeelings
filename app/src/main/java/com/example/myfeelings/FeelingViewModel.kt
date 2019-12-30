@@ -1,8 +1,8 @@
-package com.example.feelings
-
+package com.example.myfeelings
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
 
 class FeelingViewModel(application: Application):AndroidViewModel(application) {

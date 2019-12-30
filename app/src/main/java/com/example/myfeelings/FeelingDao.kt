@@ -1,4 +1,4 @@
-package com.example.feelings
+package com.example.myfeelings
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

@@ -1,4 +1,4 @@
-package com.example.feelings
+package com.example.myfeelings
 
 import android.app.Activity
 import android.content.Intent
@@ -15,7 +15,7 @@ class AddActivity : AppCompatActivity() {
         setContentView(R.layout.activity_add)
 
         buttonSave.setOnClickListener{
-            saveUser();
+            saveFeeling();
         }
 
         imageViewSad.setOnClickListener{
@@ -32,7 +32,7 @@ class AddActivity : AppCompatActivity() {
         }
     }
 
-    private fun saveUser(){
+    private fun saveFeeling(){
         if(TextUtils.isEmpty(editTextRemark.text)){
             editTextRemark.setError(("Value is required"))
             return
@@ -45,6 +45,7 @@ class AddActivity : AppCompatActivity() {
 
         val intent=Intent()
         intent.putExtra(EXTRA_REMARK,remark)
+        intent.putExtra(EXTRA_MOOD,mood)
 
 
         setResult(Activity.RESULT_OK,intent)
