@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <ImageView
+        android:id="@+id/imageViewSad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewNeutral"
+        app:srcCompat="@drawable/ic_sad"
+        tools:layout_editor_absoluteY="557dp" />
+
+    <ImageView
+        android:id="@+id/imageViewHappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewNeutral"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_happy"
+        tools:layout_editor_absoluteY="557dp" />
+
+    <ImageView
+        android:id="@+id/imageViewNeutral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewSad"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewHappy"
+        app:srcCompat="@drawable/ic_neutral"
+        tools:layout_editor_absoluteY="557dp" />
+
+    <EditText
+        android:id="@+id/editTextRemark"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/remark"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewSad"
+        app:layout_constraintStart_toStartOf="@+id/imageViewHappy"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewNeutral" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextRemark" />
+</androidx.constraintlayout.widget.ConstraintLayout>

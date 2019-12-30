@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Feelings</string>
+    <string name="remark">Remark</string>
+    <string name="date">Date</string>
+    <string name="save">Save</string>
+    <string name="error_value_required">Value is required</string>
+    <string name="error_record_not_saved">Record not saved</string>
+    <string name="record_saved">Record saved</string>
+</resources>
